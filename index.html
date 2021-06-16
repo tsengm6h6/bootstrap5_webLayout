@@ -6,8 +6,322 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/all.css">
+  <script src="https://kit.fontawesome.com/9bcd69c423.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <button class="btn btn-primary">點我募資</button>
+
+<body class="font-main">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom border-primary border-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/logo.jpg" alt="logo" width="111" height="40">
+      </a>
+      <button class="navbar-toggler border-0 text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navList"
+        aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-5" id="navList">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-3">
+            <a class="nav-link text-info navbar-active" aria-current="page" href="#">關於</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-info" href="#">挖寶</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-info" href="#">我有個大膽的想法</a>
+          </li>
+        </ul>
+        <div>
+          <button class="btn btn-primary btn-radius rounded-pill px-5 btn-main">登入</button>
+          <button class="btn btn-outline-secondary btn-radius rounded-pill px-5 border-2 btn-main-outline">註冊</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="container-fluid bg-gray pt-3 pb-5">
+      <div class="container pt-5">
+        <span class="bg-secondary rounded px-3 py-1 text-light fs-span">魔法科技</span>
+        <h1 class='font-main-bold ls-3 mt-2'>拍出會動的照片｜LivePhotos 魔法拍立得</h1>
+        <div class="row mt-4">
+          <!-- 左邊 -->
+          <div class="col-lg-7">
+            <img class="img-fluid" src="/assets/produt_image.jpg" alt="product_image">
+          </div>
+          <!-- 右邊 -->
+          <div class="col-lg-5">
+            <p class="text-info fs-6 mt-3 mb-0 mt-lg-0">目標 $600,000</p>
+            <span class='fs-1 lh-lg font-number'>$280,047</span>
+            <div class="progress">
+              <div class="progress-bar fs-span text-secondary" role="progressbar" style="width: 41%" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">41%</div>
+            </div>
+            <div class="d-flex mt-3">
+              <div class="flex-fill align-self-start">
+                <p class="mb-0 fs-6 text-info">贊助人數</p>
+                <span class="fs-1 font-number">1374人</span>
+              </div>
+              <div class="flex-fill align-self-start">
+                <p class='mb-0 fs-6 text-info'>募資倒數</p>
+                <span class="fs-1 font-number">27天</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between justify-content-lg-start mt-2">
+              <div class="d-flex align-items-center">
+                <img class="d-block me-2 me-lg-4" src="/assets/icon_good01.svg" alt="icon">
+                <span class="d-lg-none">認證標章</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="d-block me-2 me-lg-4" src="/assets/icon_good02.svg" alt="icon">
+                <span class="d-lg-none">品質保證</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="d-block me-2 me-lg-4" src="/assets/icon_good03.svg" alt="icon">
+                <span class="d-lg-none">原生創意</span>
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="d-block me-2 me-lg-4" src="/assets/icon_good04.svg" alt="icon">
+                <span class="d-lg-none">人氣王</span>
+              </div>
+            </div>
+            <p class="bg-white border-start border-primary border-4 mt-3 mb-4 p-3 fs-5 lh-base">
+              專案募資中！<br>
+              在 2021/06/14 23:59 募資結束前，您都可以贊助我們！
+            </p>
+            <div class="d-grid gap-1">
+              <button class="d-block btn btn-primary btn-lg rounded-pill btn-main font-main-bold ls-1">贊助專案</button>
+              <div class="d-flex mt-2">
+                <button
+                  class="btn btn-outline-secondary btn-lg flex-fill me-2 rounded-pill btn-main-outline font-main-bold ls-1">
+                  <i class="fa fa-heart" aria-hidden="true"></i>
+                  追蹤專案
+                </button>
+                <button class="btn btn-outline-secondary btn-lg flex-fill rounded-pill btn-main-outline font-main-bold ls-1">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  分享
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tabs -->
+    <div class="container-fluid border-top border-bottom border-light">
+      <div>
+        <nav class="nav container pe-0 justify-content-between justify-content-lg-start">
+          <a class="nav-link px-2 py-3 px-lg-5 py-lg-4 active" aria-current="page" href="#">專案介紹</a>
+          <a class="nav-link px-2 py-3 px-lg-5 py-lg-4" href="#">常見問答</a>
+          <a class="nav-link px-2 py-3 px-lg-5 py-lg-4" href="#">目前進度</a>
+          <a class="nav-link px-2 py-3 px-lg-5 py-lg-4" href="#">留言</a>
+        </nav>
+      </div>
+      
+    </div>
+    <!-- Section -->
+    <section class="container">
+      <div class="row">
+        <!-- Article -->
+        <div class="col-lg-8 py-5 mt-3">
+          <article class="mb-3">
+            <img class="img-fluid" src="/assets/p1.jpg" alt="image">
+            <h2 class="mt-3 ps-3 border-start border-primary border-4">施了魔法的照片</h2>
+            <p class="lh-lg">
+              受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。
+            </p>
+          </article>
+          <article class="mb-lg-3">
+            <img class="img-fluid" src="/assets/p2.jpg" alt="image">
+            <h2 class="mt-3 ps-3 border-start border-primary border-4">留下當下的美好</h2>
+            <p class="lh-lg mb-0">
+              受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。
+            </p>
+          </article>
+          <div class="d-none d-lg-block mt-lg-5">
+            <!-- Form -->
+            <img class='d-block mx-auto mt-3' src="/assets/hezuo.svg" alt="icon">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="bg-primary line flex-grow-1"></div>
+              <h2 class="font-main-bold ls-2 text-nowrap mx-3">贊助專案</h2>
+              <div class="bg-primary line flex-grow-1"></div>
+            </div>
+            <form action="#">
+              <div class="mb-3">
+                <label for="program" class="form-label">贊助方案</label>
+                <select class="form-select" id='program' aria-label="select program">
+                  <option selected>請選擇一個方案</option>
+                  <option value="1">方案一</option>
+                  <option value="2">方案二</option>
+                  <option value="3">方案三</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">收件人姓名</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">聯絡電話</label>
+                <input type="password" class="form-control" id="phone">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">聯絡信箱</label>
+                <input type="password" class="form-control" id="email" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="plan" class="form-label">付款方案</label>
+                <select class="form-select" id='plan' aria-label="select plan">
+                  <option selected>請選擇一個方案</option>
+                  <option value="1">方案一</option>
+                  <option value="2">方案二</option>
+                  <option value="3">方案三</option>
+                </select>
+              </div>
+              <div class="d-grid col-lg-3 mx-lg-auto">
+                <button type="submit"
+                  class="btn btn-primary rounded-pill btn-lg btn-main font-main-bold ls-1 btn-radius-lg mt-4 mb-5">贊助專案</button>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-3">
+        <!-- Aside -->
+          <aside>
+            <!-- 缺錢事務所 -->
+            <div class="container rounded aside-border p-3 mb-5 mt-lg-5">
+              <div class="d-flex">
+                <img class="aside-image border border-primary border-3 rounded-circle" src="/assets/store_img.jpg" alt="store">
+                <div class="ms-3">
+                  <h4 class='mt-2'>缺錢事務所</h4>
+                  <p class='mb-0'>已發起 1 個專案</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex">
+                  <i class="fa fa-facebook font-icon bg-secondary text-white rounded-circle position-relative fb-icon me-2" aria-hidden="true"></i>
+                  <i class="fa fa-youtube font-icon bg-secondary text-white rounded-circle position-relative yt-icon" aria-hidden="true"></i>
+                </div>
+                <button class="btn btn-outline-secondary btn-radius-sm fs-span px-3">
+                  <i class="far fa-comment-dots me-1"></i>
+                  聯絡我們
+                </button>
+              </div>
+            </div>
+            <h4 class="bg-gray text-center border-start border-end border-4 border-primary rounded fs-aside-title ls-2 font-main-bold mb-4 py-2">選擇一個方案來支持</h4>
+            <!-- First Card -->
+            <div class="card border-light card-radius-sm mb-3">
+              <img src="/assets/img.jpg" class="card-img-top" alt="project">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pb-2 mb-2 text-info border-bottom border-light">
+                  <span class="fs-6">限時優惠</span>
+                  <span>2 days 20.05.20</span>
+                </div>
+                <h3 class="card-title fs-4 ls-2">買一送一，只有兩百組別錯過</h3>
+                <span class="fs-2 font-number lh-lg">NT$ 1600</span>
+                <div class="d-flex mb-2">
+                  <span class="px-3 me-2 bg-light text-secondary rounded fs-span">已被贊助88次</span>
+                  <span class="px-3 bg-secondary text-white rounded fs-span">限量<span class="text-primary">200</span>個</span>
+                </div>
+                <p class="card-text ls-1">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                </p>
+                <a href="#" class="btn btn-primary d-block rounded-pill btn-lg btn-main font-main-bold ls-1">贊助此專案</a>
+              </div>
+            </div>
+            <!-- Second Card -->
+            <div class="card border-light card-radius-sm mb-3">
+              <img src="/assets/img.jpg" class="card-img-top" alt="project">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pb-2 mb-2 text-info border-bottom border-light">
+                  <span class="fs-6">限時優惠</span>
+                  <span>2 days 20.05.20</span>
+                </div>
+                <h3 class="card-title fs-4 ls-2">買一送一，只有兩百組別錯過</h3>
+                <span class="fs-2 font-number lh-lg">NT$ 1600</span>
+                <div class="d-flex mb-2">
+                  <span class="px-3 me-2 bg-light text-secondary rounded fs-span">已被贊助88次</span>
+                  <span class="px-3 bg-secondary text-white rounded fs-span">限量<span class="text-primary">200</span>個</span>
+                </div>
+                <p class="card-text ls-1">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                </p>
+                <a href="#" class="btn btn-primary d-block rounded-pill btn-lg btn-main font-main-bold ls-1">贊助此專案</a>
+              </div>
+            </div>
+            <!-- Third Card -->
+            <div class="card border-light card-radius-sm mb-3">
+              <img src="/assets/img.jpg" class="card-img-top" alt="project">
+              <div class="card-body">
+                <div class="d-flex justify-content-between pb-2 mb-2 text-info border-bottom border-light">
+                  <span class="fs-6">限時優惠</span>
+                  <span>2 days 20.05.20</span>
+                </div>
+                <h3 class="card-title fs-4 ls-2">買一送一，只有兩百組別錯過</h3>
+                <span class="fs-2 font-number lh-lg">NT$ 1600</span>
+                <div class="d-flex mb-2">
+                  <span class="px-3 me-2 bg-light text-secondary rounded fs-span">已被贊助88次</span>
+                  <span class="px-3 bg-secondary text-white rounded fs-span">限量<span class="text-primary">200</span>個</span>
+                </div>
+                <p class="card-text ls-1">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。
+                </p>
+                <a href="#" class="btn btn-primary d-block rounded-pill btn-lg btn-main font-main-bold ls-1">贊助此專案</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="d-lg-none col-lg-8">
+          <!-- Form -->
+          <img class='d-block mx-auto mt-3' src="/assets/hezuo.svg" alt="icon">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="bg-primary line flex-grow-1"></div>
+            <h2 class="font-main-bold ls-2 text-nowrap mx-3">贊助專案</h2>
+            <div class="bg-primary line flex-grow-1"></div>
+          </div>
+          <form action="#">
+            <div class="mb-3">
+              <label for="program" class="form-label">贊助方案</label>
+              <select class="form-select" id='program' aria-label="select program">
+                <option selected>請選擇一個方案</option>
+                <option value="1">方案一</option>
+                <option value="2">方案二</option>
+                <option value="3">方案三</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">收件人姓名</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">聯絡電話</label>
+              <input type="password" class="form-control" id="phone">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">聯絡信箱</label>
+              <input type="password" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="plan" class="form-label">付款方案</label>
+              <select class="form-select" id='plan' aria-label="select plan">
+                <option selected>請選擇一個方案</option>
+                <option value="1">方案一</option>
+                <option value="2">方案二</option>
+                <option value="3">方案三</option>
+              </select>
+            </div>
+            <div class="d-grid col-lg-3 mx-lg-auto">
+              <button type="submit" class="btn btn-primary rounded-pill btn-lg btn-main font-main-bold ls-1 btn-radius-lg mt-4 mb-5">贊助專案</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-darkGray">
+    <p class='text-white text-center py-5 mb-0'>
+      Copyright <span>&#169;</span> 拼拼 All rights reserved.
+    </p>
+  </footer>
 </body>
 </html>
