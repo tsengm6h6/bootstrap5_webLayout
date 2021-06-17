@@ -10891,7 +10891,7 @@ textarea.form-control-lg {
 .yt-icon::before {
   position: absolute;
   top: 7px;
-  left: 7px;
+  left: 6px;
 }
 
 .line {
@@ -10932,6 +10932,6 @@ textarea.form-control-lg {
   border-bottom: 3px solid #FFDF65;
 }
 
-.accordion-box-shadow:not(.collapsed) {
-  box-shadow: 0 0 8px 0 rgba(73, 72, 70, 0.15);
+.rounded-img {
+  border-radius: 30px;
 }/*# sourceMappingURL=all.css.map */
