@@ -111,22 +111,37 @@
     </section>
     <!-- Tabs -->
     <div class="container-fluid border-top border-bottom border-light">
-      <div>
-        <nav class="nav container pe-0 justify-content-between justify-content-lg-start">
-          <a class="nav-link px-2 py-3 px-lg-5 py-lg-4 active" aria-current="page" href="#">專案介紹</a>
-          <a class="nav-link px-2 py-3 px-lg-5 py-lg-4" href="#">常見問答</a>
-          <a class="nav-link px-2 py-3 px-lg-5 py-lg-4" href="#">目前進度</a>
-          <a class="nav-link px-2 py-3 px-lg-5 py-lg-4" href="#">留言</a>
-        </nav>
+      <div class="">
+        <ul class="nav nav-pills mb-0 py-0 container pe-0 justify-content-between justify-content-lg-start" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4 active" id="pills-project-tab" data-bs-toggle="pill" data-bs-target="#pills-project"
+              type="button" role="tab" aria-controls="pills-project" aria-selected="true">專案介紹</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4" id="pills-question-tab" data-bs-toggle="pill" data-bs-target="#pills-question"
+              type="button" role="tab" aria-controls="pills-question" aria-selected="false">常見問答</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4" id="pills-progress-tab" data-bs-toggle="pill" data-bs-target="#pills-progress"
+              type="button" role="tab" aria-controls="pills-progress" aria-selected="false">目前進度</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4" id="pills-comment-tab" data-bs-toggle="pill" data-bs-target="#pills-comment" type="button"
+              role="tab" aria-controls="pills-comment" aria-selected="false">留言</button>
+          </li>
+        </ul>
       </div>
-      
     </div>
+
+    
     <!-- Section -->
     <section class="container">
       <div class="row">
         <!-- Article -->
-        <div class="col-lg-8 py-5 mt-3">
-          <article class="mb-3">
+        <div class="col-lg-8 py-5 mt-lg-3 tab-content" id="pills-tabContent">
+          <!-- 專案介紹 -->
+          <div class="tab-pane fade show active" id="pills-project" role="tabpanel" aria-labelledby="pills-project-tab">
+            <article class="mb-3">
             <img class="img-fluid" src="/assets/p1.jpg" alt="image">
             <h2 class="mt-3 ps-3 border-start border-primary border-4">施了魔法的照片</h2>
             <p class="lh-lg">
@@ -140,6 +155,187 @@
               受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。
             </p>
           </article>
+          </div>
+          <!-- 常見問答 -->
+          <div class="tab-pane fade" id="pills-question" role="tabpanel" aria-labelledby="pills-question-tab">
+            <div class="accordion" id="accordion">
+              <!-- Q1 -->
+              <div class="accordion-item aside-border">
+                <h2 class="accordion-header" id="questionOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <span class="bg-primary fs-6 p-2 me-3 rounded">Q1</span>
+                    影片拍完之後可以編輯嗎？
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="questionOne"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p class="mb-0 lh-lg text-secondary">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q2 -->
+              <div class="accordion-item aside-border mt-3">
+                <h2 class="accordion-header" id="questionTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <span class="bg-primary fs-6 p-2 me-3 rounded">Q2</span>
+                    有提供保固或維修服務嗎？
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="questionTwo"
+                  data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p class="mb-0 lh-lg text-secondary">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="accordion-item aside-border mt-3">
+                <h2 class="accordion-header" id="questionThree">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseThree">
+                    <span class="bg-primary fs-6 p-2 me-3 rounded">Q3</span>
+                    補充包底片要去哪裡購買呢？
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="questionThree" data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p class="mb-0 lh-lg text-secondary">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q4 -->
+              <div class="accordion-item aside-border mt-3">
+                <h2 class="accordion-header" id="questionFour">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                    aria-expanded="true" aria-controls="collapseFour">
+                    <span class="bg-primary fs-6 p-2 me-3 rounded">Q4</span>
+                    補充包底片要去哪裡購買呢？
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="questionFour" data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p class="mb-0 lh-lg text-secondary">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q5 -->
+              <div class="accordion-item aside-border mt-3">
+                <h2 class="accordion-header" id="questionFive">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                    aria-expanded="true" aria-controls="collapseFive">
+                    <span class="bg-primary fs-6 p-2 me-3 rounded">Q5</span>
+                    補充包底片要去哪裡購買呢？
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="questionFive" data-bs-parent="#accordion">
+                  <div class="accordion-body">
+                    <p class="mb-0 lh-lg text-secondary">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 目前進度 -->
+          <div class="tab-pane fade" id="pills-progress" role="tabpanel" aria-labelledby="pills-progress-tab">
+            <!-- Card 1 -->
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-5 col-lg-4">
+                  <img class="img-fluid img-cover" src="/assets/news01.jpg" alt="news">
+                </div>
+                <div class="col-7 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-main-bold ls-1 mb-0">高雄體驗會｜免費參加送帆布袋</h5>
+                    <span class="card-text fs-h6 text-secondary">2021-6-20</span>
+                    <p class="my-2 card-text fs-h6 d-none d-lg-block">
+                      大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                    </p>
+                    <a href="#" class="d-block text-danger font-number ls-1 mt-2 underline-none">MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-5 col-lg-4">
+                  <img class="img-fluid img-cover" src="/assets/news01.jpg" alt="news">
+                </div>
+                <div class="col-7 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-main-bold ls-1 mb-0">高雄體驗會｜免費參加送帆布袋</h5>
+                    <span class="card-text fs-h6 text-secondary">2021-6-20</span>
+                    <p class="my-2 card-text fs-h6 d-none d-lg-block">
+                      大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                    </p>
+                    <a href="#" class="d-block text-danger font-number ls-1 mt-2 underline-none">MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-5 col-lg-4">
+                  <img class="img-fluid img-cover" src="/assets/news01.jpg" alt="news">
+                </div>
+                <div class="col-7 col-lg-8">
+                  <div class="card-body">
+                    <h5 class="card-title font-main-bold ls-1 mb-0">高雄體驗會｜免費參加送帆布袋</h5>
+                    <span class="card-text fs-h6 text-secondary">2021-6-20</span>
+                    <p class="my-2 card-text fs-h6 d-none d-lg-block">
+                      大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！
+                    </p>
+                    <a href="#" class="d-block text-danger font-number ls-1 mt-2 underline-none">MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 留言 -->
+          <div class="tab-pane fade" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab">
+            <!-- 第一個comment -->
+            <div class="aside-border p-3">
+              <div class="d-flex">
+                <img class='comment-thumbnail' src="/assets/user_img01.jpg" alt="user">
+                <div class="ms-3">
+                  <h3 class="font-main-bold ls-2">廖小杰</h3>
+                  <span class="text-secondary fs-span ls-2">2020年5月22日 11:23</span>
+                </div>
+              </div>
+              <p class="mt-2 ls-2">晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！</p>
+              <div class="bg-gray py-1 px-2 rounded">
+                <span class="text-danger fs-span ls-1 mb-1">提案者回覆</span>
+                <p class="ls-1">你要嘛起床的時候開燈，要嘛給我們更多錢開發阿</p>
+              </div>
+            </div>
+            <!-- 第二個comment -->
+            <div class="aside-border p-3 mt-3">
+              <div class="d-flex">
+                <img class='comment-thumbnail' src="/assets/user_img02.jpg" alt="user">
+                <div class="ms-3">
+                  <h3 class="font-main-bold ls-2">卡阿伯</h3>
+                  <span class="text-secondary fs-span ls-2">2020年5月22日 11:23</span>
+                </div>
+              </div>
+              <p class="mt-2 ls-2">希望有更多花色可以選擇！我女兒最近喜歡綠色</p>
+            </div>
+            <!-- 第三個comment -->
+            <div class="aside-border p-3 mt-3">
+              <div class="d-flex">
+                <img class='comment-thumbnail' src="/assets/user_img02.jpg" alt="user">
+                <div class="ms-3">
+                  <h3 class="font-main-bold ls-2">廖小杰</h3>
+                  <span class="text-secondary fs-span ls-2">2020年5月22日 11:23</span>
+                </div>
+              </div>
+              <p class="mt-2 ls-2">晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！</p>
+            </div>
+          </div>
+          <!-- mobile 表單 -->
           <div class="d-none d-lg-block mt-lg-5">
             <!-- Form -->
             <img class='d-block mx-auto mt-3' src="/assets/hezuo.svg" alt="icon">
@@ -183,11 +379,10 @@
                 <button type="submit"
                   class="btn btn-primary rounded-pill btn-lg btn-main font-main-bold ls-1 btn-radius-lg mt-4 mb-5">贊助專案</button>
               </div>
-          
             </form>
           </div>
         </div>
-        <div class="col-lg-4 mt-3">
+        <div class="col-lg-4 mt-lg-3">
         <!-- Aside -->
           <aside>
             <!-- 缺錢事務所 -->
@@ -323,5 +518,7 @@
       Copyright <span>&#169;</span> 拼拼 All rights reserved.
     </p>
   </footer>
+
+  <script src="/bootstrap.bundle.min.js"></script>
 </body>
 </html>
