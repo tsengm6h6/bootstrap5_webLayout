@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>拼拼募資</title>
   <link rel="stylesheet" href="css/all.css">
   <script src="https://kit.fontawesome.com/9bcd69c423.js" crossorigin="anonymous"></script>
 </head>
@@ -33,18 +33,82 @@
           </li>
         </ul>
         <div>
-          <button class="btn btn-primary btn-radius rounded-pill px-5 btn-main">登入</button>
-          <button class="btn btn-outline-secondary btn-radius rounded-pill px-5 border-2 btn-main-outline">註冊</button>
+          <button class="btn btn-primary btn-radius rounded-pill px-5 btn-main"  data-bs-toggle="modal" data-bs-target="#loginModal">登入</button>
+          <button class="btn btn-outline-secondary btn-radius rounded-pill px-5 ms-2 border-2 btn-main-outline" data-bs-toggle="modal" data-bs-target="#registerModal">註冊</button>
         </div>
       </div>
     </div>
   </nav>
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content border-0 border-top border-primary border-3">
+        <div class="modal-header">
+          <h5 class="modal-title fs-2" id="loginModalLabel">登入</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="modal-body d-grid">
+          <div class="mb-3">
+            <label for="account" class="form-label fs-5">帳號</label>
+            <input type="text" name="account" id="account" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label fs-5">密碼</label>
+            <input type="text" name="password" id="password" class="form-control">
+            <span class="fs-6 text-secondary mt-2">忘記密碼？</span>
+          </div>
+          <button type="submit" class="d-block btn btn-primary btn-lg rounded-pill btn-main font-main-bold ls-1">登入</button>
+        </form>
+        <div class="modal-footer d-flex border-0">
+          <div class="bg-light h-1 flex-grow-1"></div>
+          <p class="text-center text-secondary fs-6 mx-3">
+            還沒有帳號？<span class="text-danger">註冊一個帳號</span>
+          </p>
+          <div class="bg-light h-1 flex-grow-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Register Model -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content border-0 border-top border-primary border-3">
+        <div class="modal-header">
+          <h5 class="modal-title fs-2" id="registerModalLabel">註冊</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="modal-body d-grid">
+          <div class="mb-3">
+            <label for="name" class="form-label fs-5">姓名</label>
+            <input type="text" name="name" id="name" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="account" class="form-label fs-5">帳號</label>
+            <input type="text" name="account" id="account" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label fs-5">密碼</label>
+            <input type="text" name="password" id="password" class="form-control">
+          </div>
+          <button type="submit"
+            class="d-block btn btn-primary btn-lg rounded-pill btn-main font-main-bold ls-1">註冊</button>
+        </form>
+        <div class="modal-footer d-flex border-0">
+          <div class="bg-light h-1 flex-grow-1"></div>
+          <p class="text-center text-secondary fs-6 mx-3">
+            已經有帳號？<span class="text-danger">前往登入</span>
+          </p>
+          <div class="bg-light h-1 flex-grow-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Main -->
   <main>
     <!-- Hero -->
     <section class="container-fluid bg-gray pt-3 pb-5">
       <div class="container pt-5">
-        <span class="bg-secondary rounded px-3 py-1 text-light fs-span">魔法科技</span>
+        <span class="bg-secondary rounded px-3 py-1 text-white fs-span">魔法科技</span>
         <h1 class='font-main-bold ls-3 mt-2'>拍出會動的照片｜LivePhotos 魔法拍立得</h1>
         <div class="row mt-4">
           <!-- 左邊 -->
@@ -111,29 +175,25 @@
     </section>
     <!-- Tabs -->
     <div class="container-fluid border-top border-bottom border-light">
-      <div class="">
-        <ul class="nav nav-pills mb-0 py-0 container pe-0 justify-content-between justify-content-lg-start" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link py-4 active" id="pills-project-tab" data-bs-toggle="pill" data-bs-target="#pills-project"
-              type="button" role="tab" aria-controls="pills-project" aria-selected="true">專案介紹</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link py-4" id="pills-question-tab" data-bs-toggle="pill" data-bs-target="#pills-question"
-              type="button" role="tab" aria-controls="pills-question" aria-selected="false">常見問答</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link py-4" id="pills-progress-tab" data-bs-toggle="pill" data-bs-target="#pills-progress"
-              type="button" role="tab" aria-controls="pills-progress" aria-selected="false">目前進度</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link py-4" id="pills-comment-tab" data-bs-toggle="pill" data-bs-target="#pills-comment" type="button"
-              role="tab" aria-controls="pills-comment" aria-selected="false">留言</button>
-          </li>
-        </ul>
-      </div>
+      <ul class="nav nav-pills mb-0 py-0 container pe-0 justify-content-between justify-content-lg-start" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link py-4 active" id="pills-project-tab" data-bs-toggle="pill" data-bs-target="#pills-project"
+            type="button" role="tab" aria-controls="pills-project" aria-selected="true">專案介紹</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link py-4" id="pills-question-tab" data-bs-toggle="pill" data-bs-target="#pills-question"
+            type="button" role="tab" aria-controls="pills-question" aria-selected="false">常見問答</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link py-4" id="pills-progress-tab" data-bs-toggle="pill" data-bs-target="#pills-progress"
+            type="button" role="tab" aria-controls="pills-progress" aria-selected="false">目前進度</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link py-4" id="pills-comment-tab" data-bs-toggle="pill" data-bs-target="#pills-comment" type="button"
+            role="tab" aria-controls="pills-comment" aria-selected="false">留言</button>
+        </li>
+      </ul>
     </div>
-
-    
     <!-- Section -->
     <section class="container">
       <div class="row">
@@ -340,9 +400,9 @@
             <!-- Form -->
             <img class='d-block mx-auto mt-3' src="./assets/hezuo.svg" alt="icon">
             <div class="d-flex justify-content-between align-items-center mb-3">
-              <div class="bg-primary line flex-grow-1"></div>
+              <div class="bg-primary h-3 flex-grow-1"></div>
               <h2 class="font-main-bold ls-2 text-nowrap mx-3">贊助專案</h2>
-              <div class="bg-primary line flex-grow-1"></div>
+              <div class="bg-primary h-3 flex-grow-1"></div>
             </div>
             <form action="#">
               <div class="mb-3">
@@ -469,9 +529,9 @@
           <!-- Form -->
           <img class='d-block mx-auto mt-3' src="./assets/hezuo.svg" alt="icon">
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <div class="bg-primary line flex-grow-1"></div>
+            <div class="bg-primary h-3 flex-grow-1"></div>
             <h2 class="font-main-bold ls-2 text-nowrap mx-3">贊助專案</h2>
-            <div class="bg-primary line flex-grow-1"></div>
+            <div class="bg-primary h-3 flex-grow-1"></div>
           </div>
           <form action="#">
             <div class="mb-3">
