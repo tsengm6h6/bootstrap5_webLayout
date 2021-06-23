@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap5_layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bootstrap.bundle.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postcss": "postcss ./css/all.css -o ./css/final.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsengm6h6/bootstrap5_webLayout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsengm6h6/bootstrap5_webLayout/issues"
+  },
+  "homepage": "https://github.com/tsengm6h6/bootstrap5_webLayout#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
+  }
+}
